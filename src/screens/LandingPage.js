@@ -7,6 +7,7 @@ import {
   Text,
   View,
 } from "react-native";
+import logo from "../../assets/logo.png";
 import perfil from "../../assets/perfil.jpg";
 import musica1 from "../../assets/musica1.png";
 import musica2 from "../../assets/musica2.png";
@@ -24,20 +25,29 @@ export default function LandingPage() {
           <Text style={estilo.textoPefil}>Usuario</Text>
         </View>
 
+        <View style={estilo.hero}>
+          <Text style={estilo.textoHero}>
+            Bem-vindo ao MelodyMate, onde a música ganha vida! 🎶✨{'\n'}
+
+            Explore milhões de faixas, crie suas playlists personalizadas{'\n'}
+            e desfrute de uma experiência auditiva sem igual.
+            </Text>
+            <Image source={logo} style={estilo.imagemlLogo}/>
+        </View>
         <View style={estilo.coluna}>
           <Text style={estilo.textoRecente}>Tocadas Recentemente</Text>
           <View style={estilo.carrosel}>
             <View style={estilo.cardCarrosel}>
               <Image source={musica1} style={estilo.imagem} />
-              <Text>The triangule</Text>
+              <Text style={estilo.textoCarrosel}>The triangule</Text>
             </View>
             <View style={estilo.cardCarrosel}>
               <Image source={musica2} style={estilo.imagem} />
-              <Text>Dune of Visa</Text>
+              <Text style={estilo.textoCarrosel}t>Dune of Visa</Text>
             </View>
             <View style={estilo.cardCarrosel}>
               <Image source={musica3} style={estilo.imagem} />
-              <Text>Riskiall</Text>
+              <Text style={estilo.textoCarrosel}>Riskiall</Text>
             </View>
           </View>
         </View>
@@ -112,6 +122,19 @@ const estilo = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#0A071E",
   },
+  hero:{
+    alignItems: "center",
+  },
+  textoHero:{
+    color: "#fff",
+    textAlign: "center",
+    fontSize: 20,
+    fontWeight: "bold"
+  },
+  imagemlLogo:{
+    width: 200,
+    height: 150,
+  },
   perfil: {
     flexDirection: "row",
     top: 0,
@@ -140,6 +163,11 @@ const estilo = StyleSheet.create({
     marginBottom: 30,
     paddingHorizontal: 10,
   },
+  textoCarrosel:{
+    color: "#A4A4A4",
+    fontSize: 11,
+    fontWeight: "regular",
+  },
   imagem: {
     width: 100,
     height: 100,
@@ -151,7 +179,7 @@ const estilo = StyleSheet.create({
     color: "#F2F2F2",
     paddingHorizontal: 5,
     marginBottom: 20,
-    fontWeight: "bold",
+    fontWeight: "normal",
   },
   card: {
     flexDirection: "row",
@@ -173,10 +201,11 @@ const estilo = StyleSheet.create({
     fontSize: 12,
     color: "#DEDEDE",
     fontWeight: "regular",
+    paddingVertical: 6
   },
   Tempo: {
     fontSize: 10,
-    color: "#DEDEDE",
+    color: "#A4A4A4",
     fontWeight: "regular",
   },
 });
