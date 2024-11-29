@@ -3,26 +3,26 @@ import {
   Linking,
   SafeAreaView,
   StyleSheet,
-  Text,
   TouchableOpacity,
   View,
 } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import animacao from "../../assets/Animation.json"
 import LottieView from "lottie-react-native";
+import Texto from "../components/Texto"
 
 export default function Contato() {
   return (
     <SafeAreaView style={estilo.container}>
       <View>
-        <Text style={estilo.titulo}>Fale Conosco</Text>
-        <Text style={estilo.empresa}>
+        <Texto style={estilo.titulo}>Fale Conosco</Texto>
+        <Texto style={estilo.empresa}>
           Bem-vindo ao MelodyMate! Sabemos o quão importante é ter acesso fácil
           e organizado às suas músicas favoritas. Por isso, criamos uma
           plataforma intuitiva para você guardar e gerenciar suas músicas de
           forma prática e segura. Queremos ouvir sua opinião, responder suas
           dúvidas e estar à disposição para qualquer sugestão que você tenha!
-        </Text>
+        </Texto>
       </View>
       <View style={estilo.iconsContainer}>
         <TouchableOpacity
@@ -49,11 +49,11 @@ export default function Contato() {
         </TouchableOpacity>
       </View>
       <View style={estilo.containerFinal}>
-        <Text style={estilo.final}>
+        <Texto style={estilo.final}>
           Estamos aqui para garantir que suas músicas estejam sempre organizadas
           e ao seu alcance. Obrigado por confiar no MelodyMate para guardar suas
           memórias musicais!
-        </Text>
+        </Texto>
         <LottieView 
         source={animacao}
         autoPlay

@@ -20,6 +20,5 @@ const estilos = StyleSheet.create({
     textoNegrito:{
         fontFamily: "Poppins_700Bold",
         fontWeight: 'normal',
-        color: "#fff",
     }
 })

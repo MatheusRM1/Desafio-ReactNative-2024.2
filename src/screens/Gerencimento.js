@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
+import Texto from "../components/Texto";
 
 const data = [
   { id: "1", nome: "Music1", autor: "John Doe", tempo: "2:30" },
@@ -18,25 +19,25 @@ const data = [
 export default function App() {
   return (
     <SafeAreaView style={estilo.container}>
-      <Text style={estilo.titulo}>Gerencimento das Músicas</Text>
+      <Texto style={estilo.titulo}>Gerencimento das Músicas</Texto>
       <TouchableOpacity style={estilo.botaoCriar}>
-        <Text style={estilo.textoBotao}>Criar</Text>
+        <Texto style={estilo.textoBotao}>Criar</Texto>
       </TouchableOpacity>
       <View style={estilo.table}>
         <View style={estilo.tableRow}>
-          <Text style={[estilo.tableCell, estilo.header]}>Música</Text>
-          <Text style={[estilo.tableCell, estilo.header]}>Autor</Text>
-          <Text style={[estilo.tableCell, estilo.header]}>Tempo</Text>
-          <Text style={[estilo.tableCell, estilo.header]}>Ações</Text>
+          <Texto style={[estilo.tableCell, estilo.header]}>Música</Texto>
+          <Texto style={[estilo.tableCell, estilo.header]}>Autor</Texto>
+          <Texto style={[estilo.tableCell, estilo.header]}>Tempo</Texto>
+          <Texto style={[estilo.tableCell, estilo.header]}>Ações</Texto>
         </View>
         <FlatList
           data={data}
           keyExtractor={(item) => item.id}
           renderItem={({ item }) => (
             <View style={estilo.tableRow}>
-              <Text style={estilo.tableCell}>{item.nome}</Text>
-              <Text style={estilo.tableCell}>{item.autor}</Text>
-              <Text style={estilo.tableCell}>{item.tempo}</Text>
+              <Texto style={estilo.tableCell}>{item.nome}</Texto>
+              <Texto style={estilo.tableCell}>{item.autor}</Texto>
+              <Texto style={estilo.tableCell}>{item.tempo}</Texto>
               <View style={[estilo.tableRow, estilo.buttonRow]}>
                 <TouchableOpacity style={estilo.botao}>
                   <Icon name="eye" size={20} color="#007BFF" />
@@ -79,7 +80,6 @@ const estilo = StyleSheet.create({
     color: "#fff",
   },
   header: {
-    backgroundColor: "#f4f4f4",
     fontWeight: "bold",
     color: "#000",
   },

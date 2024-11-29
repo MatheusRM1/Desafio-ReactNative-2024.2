@@ -3,6 +3,7 @@ import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import { useFonts , Poppins_400Regular , Poppins_700Bold } from "@expo-google-fonts/poppins";
 import Texto from './src/components/Texto';
 import AppLoading from 'expo-app-loading';
+import Routes from './src/routes';
 
 export default function App() {
   const [fonteCarregada] = useFonts({
@@ -15,22 +16,6 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <StatusBar/>   
-      <Texto style={styles.texto}>App</Texto>
-    </SafeAreaView>
+    <Routes />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  texto: {
-    fontSize: 100,
-    fontWeight: 'normal',
-  },
-});

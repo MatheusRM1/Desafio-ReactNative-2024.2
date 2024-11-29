@@ -15,6 +15,7 @@ import musica3 from "../../assets/musica3.png";
 import musica4 from "../../assets/musica4.png";
 import musica5 from "../../assets/musica5.png";
 import musica6 from "../../assets/musica6.png";
+import Texto from "../components/Texto";
 
 export default function LandingPage() {
   return (
@@ -22,91 +23,91 @@ export default function LandingPage() {
       <SafeAreaView style={estilo.container}>
         <View style={estilo.perfil}>
           <Image source={perfil} style={estilo.imagemP} />
-          <Text style={estilo.textoPefil}>Usuario</Text>
+          <Texto style={estilo.textoPefil}>Usuario</Texto>
         </View>
 
         <View style={estilo.hero}>
-          <Text style={estilo.textoHero}>
+          <Texto style={estilo.textoHero}>
             Bem-vindo ao MelodyMate, onde a música ganha vida! 🎶✨{'\n'}
 
             Explore milhões de faixas, crie suas playlists personalizadas{'\n'}
             e desfrute de uma experiência auditiva sem igual.
-            </Text>
+            </Texto>
             <Image source={logo} style={estilo.imagemlLogo}/>
         </View>
         <View style={estilo.coluna}>
-          <Text style={estilo.textoRecente}>Tocadas Recentemente</Text>
+          <Texto style={estilo.textoRecente}>Tocadas Recentemente</Texto>
           <View style={estilo.carrosel}>
             <View style={estilo.cardCarrosel}>
               <Image source={musica1} style={estilo.imagem} />
-              <Text style={estilo.textoCarrosel}>The triangule</Text>
+              <Texto style={estilo.textoCarrosel}>The triangule</Texto>
             </View>
             <View style={estilo.cardCarrosel}>
               <Image source={musica2} style={estilo.imagem} />
-              <Text style={estilo.textoCarrosel}t>Dune of Visa</Text>
+              <Texto style={estilo.textoCarrosel}t>Dune of Visa</Texto>
             </View>
             <View style={estilo.cardCarrosel}>
               <Image source={musica3} style={estilo.imagem} />
-              <Text style={estilo.textoCarrosel}>Riskiall</Text>
+              <Texto style={estilo.textoCarrosel}>Riskiall</Texto>
             </View>
           </View>
         </View>
         <View style={estilo.sessaoRecomendado}>
-          <Text style={estilo.textoRecente}>Recomendadas para você</Text>
+          <Texto style={estilo.textoRecente}>Recomendadas para você</Texto>
           <View style={estilo.card}>
             <Image source={musica4} style={estilo.imagem} />
             <View style={estilo.textoCard}>
-              <Text style={estilo.Titulo}>Take Care of you</Text>
-              <Text style={estilo.Autor}>Admina Thembi</Text>
-              <Text style={estilo.Tempo}>3:14</Text>
+              <Texto style={estilo.Titulo}>Take Care of you</Texto>
+              <Texto style={estilo.Autor}>Admina Thembi</Texto>
+              <Texto style={estilo.Tempo}>3:14</Texto>
             </View>
           </View>
           <View style={estilo.card}>
             <Image source={musica5} style={estilo.imagem} />
             <View style={estilo.textoCard}>
-              <Text style={estilo.Titulo}>The stranger inside you</Text>
-              <Text style={estilo.Autor}>Jeane Lebras</Text>
-              <Text style={estilo.Tempo}>4:08</Text>
+              <Texto style={estilo.Titulo}>The stranger inside you</Texto>
+              <Texto style={estilo.Autor}>Jeane Lebras</Texto>
+              <Texto style={estilo.Tempo}>4:08</Texto>
             </View>
           </View>
           <View style={estilo.card}>
             <Image source={musica6} style={estilo.imagem} />
             <View style={estilo.textoCard}>
-              <Text style={estilo.Titulo}>Edwall of beauty mind</Text>
-              <Text style={estilo.Autor}>Jacob Givson</Text>
-              <Text style={estilo.Tempo}>2:43</Text>
+              <Texto style={estilo.Titulo}>Edwall of beauty mind</Texto>
+              <Texto style={estilo.Autor}>Jacob Givson</Texto>
+              <Texto style={estilo.Tempo}>2:43</Texto>
             </View>
           </View>
           <View style={estilo.card}>
             <Image source={musica6} style={estilo.imagem} />
             <View style={estilo.textoCard}>
-              <Text style={estilo.Titulo}>Edwall of beauty mind</Text>
-              <Text style={estilo.Autor}>Jacob Givson</Text>
-              <Text style={estilo.Tempo}>2:43</Text>
+              <Texto style={estilo.Titulo}>Edwall of beauty mind</Texto>
+              <Texto style={estilo.Autor}>Jacob Givson</Texto>
+              <Texto style={estilo.Tempo}>2:43</Texto>
             </View>
           </View>
           <View style={estilo.card}>
             <Image source={musica6} style={estilo.imagem} />
             <View style={estilo.textoCard}>
-              <Text style={estilo.Titulo}>Edwall of beauty mind</Text>
-              <Text style={estilo.Autor}>Jacob Givson</Text>
-              <Text style={estilo.Tempo}>2:43</Text>
+              <Texto style={estilo.Titulo}>Edwall of beauty mind</Texto>
+              <Texto style={estilo.Autor}>Jacob Givson</Texto>
+              <Texto style={estilo.Tempo}>2:43</Texto>
             </View>
           </View>
           <View style={estilo.card}>
             <Image source={musica6} style={estilo.imagem} />
             <View style={estilo.textoCard}>
-              <Text style={estilo.Titulo}>Edwall of beauty mind</Text>
-              <Text style={estilo.Autor}>Jacob Givson</Text>
-              <Text style={estilo.Tempo}>2:43</Text>
+              <Texto style={estilo.Titulo}>Edwall of beauty mind</Texto>
+              <Texto style={estilo.Autor}>Jacob Givson</Texto>
+              <Texto style={estilo.Tempo}>2:43</Texto>
             </View>
           </View>
           <View style={estilo.card}>
             <Image source={musica6} style={estilo.imagem} />
             <View style={estilo.textoCard}>
-              <Text style={estilo.Titulo}>Edwall of beauty mind</Text>
-              <Text style={estilo.Autor}>Jacob Givson</Text>
-              <Text style={estilo.Tempo}>2:43</Text>
+              <Texto style={estilo.Titulo}>Edwall of beauty mind</Texto>
+              <Texto style={estilo.Autor}>Jacob Givson</Texto>
+              <Texto style={estilo.Tempo}>2:43</Texto>
             </View>
           </View>
         </View>
