@@ -15,7 +15,6 @@ const estilos = StyleSheet.create({
     texto:{
         fontFamily: "Poppins_400Regular",
         fontWeight: "normal",
-        color: "#fff",
     },
     textoNegrito:{
         fontFamily: "Poppins_700Bold",

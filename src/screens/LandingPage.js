@@ -29,8 +29,7 @@ export default function LandingPage() {
         <View style={estilo.hero}>
           <Texto style={estilo.textoHero}>
             Bem-vindo ao MelodyMate, onde a música ganha vida! 🎶✨{'\n'}
-
-            Explore milhões de faixas, crie suas playlists personalizadas{'\n'}
+            Explore milhões de faixas, crie suas playlists personalizadas
             e desfrute de uma experiência auditiva sem igual.
             </Texto>
             <Image source={logo} style={estilo.imagemlLogo}/>
@@ -121,6 +120,7 @@ const estilo = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    paddingHorizontal: 20,
     backgroundColor: "#0A071E",
   },
   hero:{
@@ -130,7 +130,9 @@ const estilo = StyleSheet.create({
     color: "#fff",
     textAlign: "center",
     fontSize: 20,
-    fontWeight: "bold"
+    fontWeight: "bold",
+    paddingHorizontal: 10,
+    paddingVertical: 20,
   },
   imagemlLogo:{
     width: 200,

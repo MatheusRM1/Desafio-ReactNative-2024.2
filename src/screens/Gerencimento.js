@@ -62,11 +62,12 @@ const estilo = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    paddingHorizontal: 20,
     backgroundColor: "#0A071E",
   },
   table: {
     width: "100%",
-    borderWidth: 2,
+    borderWidth: 0.4,
     borderColor: "#3422FF",
   },
   tableRow: {
@@ -75,7 +76,7 @@ const estilo = StyleSheet.create({
   tableCell: {
     flex: 1,
     padding: 10,
-    borderWidth: 1,
+    borderWidth: 0.4,
     borderColor: "#3422FF",
     color: "#fff",
   },
@@ -92,7 +93,7 @@ const estilo = StyleSheet.create({
   buttonRow: {
     flex: 1,
     padding: 10,
-    borderWidth: 1,
+    borderWidth: 0.4,
     borderColor: "#3422FF",
     color: "#fff",
     flexDirection: "row",
@@ -103,16 +104,17 @@ const estilo = StyleSheet.create({
   },
   botaoCriar: {
     backgroundColor: "#6156E2",
-    paddingVertical: 10,
-    paddingHorizontal: 30,
-    borderRadius: 5,
+    paddingVertical: 15,
+    paddingHorizontal: 40,
+    borderRadius: 10,
     borderColor: "#fff",
     marginVertical: 20,
-    borderWidth: 0.3,
+    borderWidth: 0.5,
   },
   textoBotao: {
     color: "#FFF",
-    fontSize: 12,
-    textAlign: "center",
+    fontSize: 18,
+    fontWeight: "bold",
+    textAlign: "center"
   },
 });

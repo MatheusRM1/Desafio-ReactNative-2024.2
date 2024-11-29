@@ -70,6 +70,7 @@ const estilo = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    paddingHorizontal: 20,
     backgroundColor: "#0A071E",
   },
   titulo: {
@@ -89,6 +90,7 @@ const estilo = StyleSheet.create({
     color: "#fff",
     fontSize: 18,
     paddingHorizontal: 5,
+    paddingVertical: 20,
     textAlign: "center"
   },
   iconsContainer: {
