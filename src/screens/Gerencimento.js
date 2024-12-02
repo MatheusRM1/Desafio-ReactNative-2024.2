@@ -82,7 +82,7 @@ const estilo = StyleSheet.create({
   },
   header: {
     fontWeight: "bold",
-    color: "#000",
+    color: "#fff",
   },
   titulo: {
     fontSize: 24,

@@ -12,7 +12,7 @@ export default function App() {
   });
   
   if(!fonteCarregada) {
-    return <AppLoading/>
+    return null;
   }
 
   return (

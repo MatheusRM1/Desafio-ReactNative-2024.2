@@ -5,12 +5,17 @@ import {
   SafeAreaView,
   StyleSheet,
   TextInput,
+  TouchableOpacity,
   View,
 } from "react-native";
 import Texto from "../components/Texto";
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo/logo.png';
+import { useNavigation } from "@react-navigation/native";
+
+
 
 export default function Login() {
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={estilo.container1}>
         <Texto style={estilo.textoLogin}>Login</Texto>
@@ -35,9 +40,9 @@ export default function Login() {
           secureTextEntry
           placeholderTextColor={"#fff"}
         />
-        <Pressable style={estilo.botao}>
+        <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate('Home')}>
             <Texto style={estilo.textoBotao}>Entrar</Texto>
-        </Pressable>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );

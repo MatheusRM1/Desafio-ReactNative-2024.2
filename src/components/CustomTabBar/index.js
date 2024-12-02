@@ -51,7 +51,7 @@ export default function CustomTabBar({ state, descriptors, navigation }) {
                   <MaterialIcons
                     name={options.tabBarIcon}
                     size={34}
-                    color={isFocused ? "#8f2abd" : "#535353"}
+                    color={isFocused ? "#6156E2" : "#535353"}
                   />
                 </View>
               </View>
@@ -78,8 +78,12 @@ const estilo = StyleSheet.create({
     bottom: 0,
     backgroundColor: "rgba(0, 0, 0, 0.9)",
     gap: 8,
-    elevation: 10,
-    shadowColor: "#87cefa",
+    elevation: 5,
+    shadowColor: "#6156E2",
+    shadowOffset:{
+      width:100,
+      height:100,
+    }
   },
   buttomTab: {
     justifyContent: "center",

@@ -5,6 +5,8 @@ import LandingPage from "../screens/LandingPage";
 import Contato from "../screens/Contato";
 import Gerenciamento from "../screens/Gerencimento";
 import CustomTabBar from "../components/CustomTabBar";
+import NavBar from "../components/Header";
+import Login from "../screens/Login";
 
 
 const Tab = createBottomTabNavigator();
@@ -12,7 +14,7 @@ const Tab = createBottomTabNavigator();
 export default function TabRoutes() {
   return (
     <Tab.Navigator screenOptions={{
-      headerShown: false,
+      header: (props) => <NavBar />,
       tabBarHideOnKeyboard: true,
       tabBarShowLabel: false,
       tabBarActiveTintColor: "#121212",
@@ -23,7 +25,7 @@ export default function TabRoutes() {
       }}
       tabBar={ (props) => <CustomTabBar {...props}/>}
       >
-      <Tab.Screen name="Ínicio" component={LandingPage} options={{
+      <Tab.Screen name="Home" component={LandingPage} options={{
         tabBarIcon: "home"
       }}/>
       <Tab.Screen name="Contato" component={Contato} options={{
@@ -32,6 +34,7 @@ export default function TabRoutes() {
       <Tab.Screen name="Gerenciamento" component={Gerenciamento} options={{
         tabBarIcon: "folder"
       }}/>
+      <Tab.Screen name="Login" component={Login} options={{headerShown: 'false'}}/>
     </Tab.Navigator>
   );
 }
