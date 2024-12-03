@@ -8,7 +8,6 @@ import {
   View,
 } from "react-native";
 
-import Texto from "./Texto";
 import logo from "../../assets/logo/logo.png";
 import { Feather } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
@@ -23,7 +22,7 @@ export default function NavBar() {
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigation.navigate("Login")}>
           <View style={estilo.button}>
-            <Texto style={estilo.textoPefil}>Logout</Texto>
+            <Text style={estilo.textoPefil}>Logout</Text>
             <Feather name="log-out" color="white" size={20} />
           </View>
         </TouchableOpacity>
@@ -62,6 +61,7 @@ const estilo = StyleSheet.create({
     color: "#fff",
     alignSelf: "center",
     textDecorationLine: "underline",
+    fontFamily: "PoppinsRegular"
   },
   button: {
     flexDirection: "row",

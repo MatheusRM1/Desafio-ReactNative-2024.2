@@ -1,14 +1,13 @@
 import React from "react";
 import {
   Image,
-  Pressable,
   SafeAreaView,
   StyleSheet,
+  Text,
   TextInput,
   TouchableOpacity,
   View,
 } from "react-native";
-import Texto from "../components/Texto";
 import logo from '../../assets/logo/logo.png';
 import { useNavigation } from "@react-navigation/native";
 
@@ -18,7 +17,7 @@ export default function Login() {
   const navigation = useNavigation();
   return (
     <SafeAreaView style={estilo.container1}>
-        <Texto style={estilo.textoLogin}>Login</Texto>
+        <Text style={estilo.textoLogin}>Login</Text>
         <View>
         <Image
         source={logo}
@@ -26,14 +25,14 @@ export default function Login() {
         />
         </View>
       <View style={estilo.container2}>
-        <Texto style={estilo.textoForm}>Email</Texto>
+        <Text style={estilo.textoForm}>Email</Text>
           <TextInput
             style={estilo.input}
             placeholder="Digite seu email"
             keyboardType="email-address"
             placeholderTextColor={"#fff"}
           />
-        <Texto style={estilo.textoForm}>Senha</Texto>
+        <Text style={estilo.textoForm}>Senha</Text>
         <TextInput
           style={estilo.input}
           placeholder="Digite sua senha"
@@ -41,7 +40,7 @@ export default function Login() {
           placeholderTextColor={"#fff"}
         />
         <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate('Home')}>
-            <Texto style={estilo.textoBotao}>Entrar</Texto>
+            <Text style={estilo.textoBotao}>Entrar</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -58,6 +57,7 @@ const estilo = StyleSheet.create({
   textoLogin: {
     fontSize: 40,
     color: "#EFEFEF",
+    fontFamily: "PoppinsBold"
   },
   container2: {
     width: "100%",
@@ -67,7 +67,8 @@ const estilo = StyleSheet.create({
   textoForm: {
     fontSize: 14,
     color: "#A4A4A4",
-    paddingVertical: 15
+    paddingVertical: 15,
+    fontFamily: "PoppinsRegular"
   },
   input:{
     backgroundColor: "#3e3e3e",
@@ -83,6 +84,7 @@ const estilo = StyleSheet.create({
     width: "75%",
     height: 50,
     fontSize: 20,
+    fontFamily: "PoppinsRegular",
     paddingVertical: 10,
     backgroundColor: "#9C3FE4",
     alignItems: "center",
@@ -92,7 +94,8 @@ const estilo = StyleSheet.create({
   },
   textoBotao:{
     fontSize: 15,
-    color: "#fff"
+    color: "#fff",
+    fontFamily: "PoppinsBold"
   },
   imagem:{
     width: 200,

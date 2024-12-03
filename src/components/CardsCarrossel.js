@@ -1,14 +1,13 @@
 import React from "react";
-import { Image, StyleSheet, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import musica1 from "../../assets/musicas/musica1.png";
-import Texto from "./Texto";
 
 export default function CardsCarrossel(props) {
   return (
     <View>
       <View style={estilo.cardCarrosel}>
         <Image source={musica1} style={estilo.imagem} />
-        <Texto style={estilo.textoCarrosel}>{props.titulo}</Texto>
+        <Text style={estilo.textoCarrosel}>{props.titulo}</Text>
       </View>
     </View>
   );
@@ -24,7 +23,7 @@ const estilo = StyleSheet.create({
   textoCarrosel: {
     color: "#A4A4A4",
     fontSize: 11,
-    fontWeight: "regular",
+    fontFamily: "PoppinsRegular"
   },
   imagem: {
     width: 100,
