@@ -7,6 +7,7 @@ import Gerenciamento from "../screens/Gerencimento";
 import CustomTabBar from "../components/CustomTabBar";
 import NavBar from "../components/Header";
 import Login from "../screens/Login";
+import Modal from "../components/ModaisCriar";
 
 
 const Tab = createBottomTabNavigator();
@@ -35,6 +36,7 @@ export default function TabRoutes() {
         tabBarIcon: "folder"
       }}/>
       <Tab.Screen name="Login" component={Login} options={{headerShown: 'false'}}/>
+      <Tab.Screen name="Modal" component={Modal} options={{headerShown: 'false'}}/>
     </Tab.Navigator>
   );
 }
