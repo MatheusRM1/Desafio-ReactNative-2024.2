@@ -1,14 +1,18 @@
 import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import musica1 from "../../assets/musicas/musica1.png";
 
 export default function CardsCarrossel(props) {
+  const navigation = useNavigation();
   return (
     <View>
-      <View style={estilo.cardCarrosel}>
-        <Image source={musica1} style={estilo.imagem} />
-        <Text style={estilo.textoCarrosel}>{props.titulo}</Text>
-      </View>
+      <TouchableOpacity onPress={() => navigation.navigate("Viz")}>
+        <View style={estilo.cardCarrosel}>
+          <Image source={musica1} style={estilo.imagem} />
+          <Text style={estilo.textoCarrosel}>{props.titulo}</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -23,7 +27,7 @@ const estilo = StyleSheet.create({
   textoCarrosel: {
     color: "#A4A4A4",
     fontSize: 11,
-    fontFamily: "PoppinsRegular"
+    fontFamily: "PoppinsRegular",
   },
   imagem: {
     width: 100,
