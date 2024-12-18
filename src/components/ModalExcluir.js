@@ -30,7 +30,7 @@ export default function ModalRemover() {
               style={estilo.botao}
               onPress={() => navigation.navigate("HomeScreen")}
             >
-              <Text style={estilo.textoBotao}>Criar</Text>
+              <Text style={estilo.textoBotao}>Excluir</Text>
             </TouchableOpacity>
           </View>
         </View>

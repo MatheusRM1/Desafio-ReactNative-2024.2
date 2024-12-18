@@ -105,7 +105,7 @@ const estilo = StyleSheet.create({
   },
   inputMenores: {
     backgroundColor: "#3e3e3e",
-    width: 150,
+    width: 175,
     height: 45,
     paddingHorizontal: 10,
     borderRadius: 10,
