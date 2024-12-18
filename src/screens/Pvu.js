@@ -8,7 +8,7 @@ import {
   View,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import Musica1 from "../../assets/musicas/musica1.png";
+import Musica1 from "../../assets/musicas/black.jpg";
 import AntDesign from "@expo/vector-icons/AntDesign";
 
 export default function VisualizacaoIndividual() {
@@ -23,32 +23,31 @@ export default function VisualizacaoIndividual() {
         </View>
         <Image source={Musica1} style={estilo.Image} />
         <View style={estilo.textos}>
-          <Text style={estilo.informacaoT}>Musica1</Text>
-          <Text style={estilo.informacao}>Autor - 2:50</Text>
+          <Text style={estilo.informacaoT}>Black Sheep</Text>
+          <Text style={estilo.informacao}>Metric - 4:55</Text>
         </View>
         <View style={estilo.bloco}>
           <Text style={estilo.letra}>
-            Your blades are sharpened with precision Flashing your favorite
-            point of view I know you're waiting in the distance Just like you
-            always do Just like you always do Already pulling me in Already
-            under my skin And I know exactly how this ends I let you cut me
-            open, just to watch me bleed Gave up who I am for who you wanted me
-            to be Don't know why I'm hoping for what I won't receive Falling for
-            the promise of the emptiness machine Going around like a revolver
-            It's been decided how we lose 'Cause there's a fire under the altar
-            I keep on lying to I keep on lying to Already pulling me in Already
-            under my skin And I know exactly how this ends I let you cut me
-            open, just to watch me bleed Gave up who I am for who you wanted me
-            to be Don't know why I'm hoping for what I won't receive Falling for
-            the promise of the emptiness machine I only wanted to be part of
-            something I only wanted to be part of, part of I only wanted to be
-            part of something I only wanted to be part of, part of I only wanted
-            to be part of something I only wanted to be part I let you cut me
-            open, just to watch me bleed Gave up who I am for who you wanted me
-            to be Don't know why I'm hoping, so fucking naive Falling for the
-            promise of the emptiness machine The emptiness machine (I only
-            wanted to be part of something) The emptiness machine (I only wanted
-            to be part of) The emptiness machine
+            {`Hello again, friend of a friend, I knew you when
+Our common goal was waiting for the world to end
+Now that the truth is just a rule that you can bend
+You crack the whip, shape-shift and trick the past again
+
+I'll send you my love on a wire
+Lift you up, every time, everyone, ooh, pulls away, ooh
+From you
+
+Got balls of steel, got an automobile, for a minimum wage
+Got real estate, I'm buying it all up in outer space
+Now that the truth is just a rule that you can bend
+You crack the whip, shape-shift and trick the past again
+
+I'll send you my love on a wire
+Lift you up, every time, everyone, ooh, pulls away, ooh
+
+It's a mechanical bull, the number one
+You'll take a ride from anyone
+Everyone wants a ride, pulls away, ooh, from you`}
           </Text>
         </View>
       </View>
@@ -104,6 +103,6 @@ const estilo = StyleSheet.create({
     objectFit: "cover",
     borderRadius: 50,
     marginBottom: 30,
-    marginTop: 5
+    marginTop: 5,
   },
 });
