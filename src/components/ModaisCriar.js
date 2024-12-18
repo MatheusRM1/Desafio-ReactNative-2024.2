@@ -95,7 +95,7 @@ const estilo = StyleSheet.create({
   },
   input: {
     backgroundColor: "#3e3e3e",
-    width: "80%",
+    width: "90%",
     height: 45,
     paddingHorizontal: 10,
     borderRadius: 10,

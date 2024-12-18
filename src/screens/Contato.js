@@ -26,31 +26,33 @@ export default function Contato() {
             dúvidas e estar à disposição para qualquer sugestão que você tenha!
           </Text>
         </View>
-        <View style={estilo.iconsContainer}>
-          <TouchableOpacity
-            onPress={() =>
-              Linking.openURL("https://www.instagram.com/melodymate")
-            }
-          >
-            <Icon name="instagram" size={40} color="#E1306C" />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() =>
-              Linking.openURL("https://www.facebook.com/melodymate")
-            }
-          >
-            <Icon name="facebook" size={40} color="#3b5998" />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => Linking.openURL("https://wa.me/5532991066934")}
-          >
-            <Icon name="whatsapp" size={40} color="#25D366" />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => Linking.openURL("mailto:support@melodymate.com")}
-          >
-            <Icon name="envelope" size={40} color="#fff" />
-          </TouchableOpacity>
+        <View style={estilo.icons}>
+          <View style={estilo.iconsContainer}>
+            <TouchableOpacity
+              onPress={() =>
+                Linking.openURL("https://www.instagram.com/melodymate")
+              }
+            >
+              <Icon name="instagram" size={40} color="#E1306C" />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() =>
+                Linking.openURL("https://www.facebook.com/melodymate")
+              }
+            >
+              <Icon name="facebook" size={40} color="#3b5998" />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => Linking.openURL("https://wa.me/5532991066934")}
+            >
+              <Icon name="whatsapp" size={40} color="#25D366" />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => Linking.openURL("mailto:support@melodymate.com")}
+            >
+              <Icon name="envelope" size={40} color="#fff" />
+            </TouchableOpacity>
+          </View>
         </View>
         <View style={estilo.containerFinal}>
           <Text style={estilo.final}>
@@ -76,9 +78,8 @@ const estilo = StyleSheet.create({
   titulo: {
     color: "#fff",
     fontSize: 25,
-    textAlign: "left",
     paddingVertical: 20,
-    fontFamily: "PoppinsBold"
+    fontFamily: "PoppinsBold",
   },
   empresa: {
     color: "#fff",
@@ -92,7 +93,10 @@ const estilo = StyleSheet.create({
     paddingHorizontal: 5,
     paddingVertical: 20,
     textAlign: "center",
-    fontFamily: "PoppinsRegular"
+    fontFamily: "PoppinsRegular",
+  },
+  icons:{
+    alignItems: "center"
   },
   iconsContainer: {
     flexDirection: "row",

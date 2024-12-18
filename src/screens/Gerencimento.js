@@ -77,7 +77,7 @@ const estilo = StyleSheet.create({
   },
   tableCell: {
     flex: 1,
-    padding: 10,
+    padding: 12,
     borderWidth: 0.4,
     borderColor: "#3422FF",
     color: "#fff",
@@ -95,7 +95,8 @@ const estilo = StyleSheet.create({
   },
   buttonRow: {
     flex: 1,
-    padding: 10,
+    gap: 4,
+    padding: 12,
     borderWidth: 0.4,
     borderColor: "#3422FF",
     color: "#fff",
