@@ -1,4 +1,5 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Feather } from '@expo/vector-icons'
 
 import LandingPage from "../screens/LandingPage";
@@ -9,7 +10,7 @@ import NavBar from "../components/Header";
 import Login from "../screens/Login";
 import Modal from "../components/ModaisCriar";
 
-
+const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
 export default function TabRoutes() {
@@ -35,8 +36,6 @@ export default function TabRoutes() {
       <Tab.Screen name="Gerenciamento" component={Gerenciamento} options={{
         tabBarIcon: "folder"
       }}/>
-      <Tab.Screen name="Login" component={Login} options={{headerShown: 'false'}}/>
-      <Tab.Screen name="Modal" component={Modal} options={{headerShown: 'false'}}/>
     </Tab.Navigator>
   );
 }

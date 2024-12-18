@@ -39,7 +39,7 @@ export default function Login() {
           secureTextEntry
           placeholderTextColor={"#fff"}
         />
-        <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate('Home')}>
+        <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate('HomeScreen')}>
             <Text style={estilo.textoBotao}>Entrar</Text>
         </TouchableOpacity>
       </View>

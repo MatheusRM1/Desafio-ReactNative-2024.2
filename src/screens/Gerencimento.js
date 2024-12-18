@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigation } from "@react-navigation/native";
 import {
   SafeAreaView,
   StyleSheet,
@@ -16,10 +17,12 @@ const data = [
 ];
 
 export default function App() {
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView style={estilo.container}>
       <Text style={estilo.titulo}>Gerencimento das Músicas</Text>
-      <TouchableOpacity style={estilo.botaoCriar}>
+      <TouchableOpacity style={estilo.botaoCriar} onPress={() => navigation.navigate("ModalCriar")}>
         <Text style={estilo.textoBotao}>Criar</Text>
       </TouchableOpacity>
       <View style={estilo.table}>
@@ -38,13 +41,13 @@ export default function App() {
               <Text style={estilo.tableCell}>{item.autor}</Text>
               <Text style={estilo.tableCell}>{item.tempo}</Text>
               <View style={[estilo.tableRow, estilo.buttonRow]}>
-                <TouchableOpacity style={estilo.botao}>
+                <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate("Viz")}>
                   <Icon name="eye" size={20} color="#007BFF" />
                 </TouchableOpacity>
-                <TouchableOpacity style={estilo.botao}>
+                <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate("ModalEdição")}>
                   <Icon name="edit" size={20} color="#FFC107" />
                 </TouchableOpacity>
-                <TouchableOpacity style={estilo.botao}>
+                <TouchableOpacity style={estilo.botao} onPress={() => navigation.navigate("ModalExclusão")}>
                   <Icon name="trash" size={20} color="#DC3545" />
                 </TouchableOpacity>
               </View>

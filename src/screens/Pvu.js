@@ -30,5 +30,7 @@ const estilo = StyleSheet.create({
     alignItems: "center",
     backgroundColor: "#0A071E",
   },
-  text:
+  text:{
+
+  },
 });

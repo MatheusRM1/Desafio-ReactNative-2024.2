@@ -10,7 +10,7 @@ import {
   View,
 } from "react-native";
 
-export default function Modal() {
+export default function ModalCriar() {
   const navigation = useNavigation();
   return (
     <SafeAreaView style={estilo.container1}>
@@ -23,21 +23,21 @@ export default function Modal() {
             placeholder="Digite o nome de sua Música"
             placeholderTextColor={"#fff"}
           />
-          <View style={{flexDirection: "row"}}>
-            <View style={{flexDirection: "column", marginHorizontal: 10,}}>
+          <View style={{ flexDirection: "row" }}>
+            <View style={{ flexDirection: "column", marginHorizontal: 10 }}>
               <Text style={estilo.textoForm}>Autor</Text>
               <TextInput
                 style={estilo.inputMenores}
-                placeholder="Digite sua senha"
+                placeholder="Digite o Autor"
                 secureTextEntry
                 placeholderTextColor={"#fff"}
               />
             </View>
-            <View style={{flexDirection: "column", marginHorizontal: 10}}>
+            <View style={{ flexDirection: "column", marginHorizontal: 10 }}>
               <Text style={estilo.textoForm}>Tempo</Text>
               <TextInput
                 style={estilo.inputMenores}
-                placeholder="Digite o tempo da Música"
+                placeholder="Digite o tempo"
                 placeholderTextColor={"#fff"}
               />
             </View>
@@ -45,21 +45,21 @@ export default function Modal() {
           <Text style={estilo.textoForm}>Letra da Música</Text>
           <TextInput
             style={estilo.inputLetra}
-            placeholder="Digite o tempo"
+            placeholder="Digite a Letra da música"
             multiline
             placeholderTextColor={"#fff"}
           />
           <View style={estilo.containerBotao}>
             <TouchableOpacity
               style={estilo.botao}
-              onPress={() => navigation.navigate("Home")}
+              onPress={() => navigation.navigate("HomeScreen")}
             >
               <Text style={estilo.textoBotao}>Cancelar</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
               style={estilo.botao}
-              onPress={() => navigation.navigate("Gerenciamento")}
+              onPress={() => navigation.navigate("HomeScreen")}
             >
               <Text style={estilo.textoBotao}>Criar</Text>
             </TouchableOpacity>
@@ -80,6 +80,7 @@ const estilo = StyleSheet.create({
     color: "#EFEFEF",
     textAlign: "center",
     fontFamily: "PoppinsBold",
+    marginTop: 100,
   },
   container2: {
     width: "100%",
